@@ -1,0 +1,187 @@
+# perform checks on a file
+
+# check the technical writing for various characteristics
+- writing/reflection.md:
+    - description: Ensure that writing/reflection.md file exists.
+      check: ConfirmFileExists
+    # - description: Write a minimum number of meaningful words (>400) in the reflection
+    #   check: CountFileWords
+    #   options:
+    #     count: 400
+    #     exact: false
+    - description: Complete all TODOs, remove the TODO markers in writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Add your name and then delete the 'Add Your Name Here' prompt in writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+# check the code for various characteristics
+- src/program1.py:
+    - description: src/program1.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program1.py -> Complete all TODOs and then remove the these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program1.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program2.py:
+    - description: src/program2.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program2.py -> Complete all TODOs and then remove the these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program2.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+
+# check the code for various characteristics
+- src/program1.py:
+    - description: src/program3.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program3.py -> Complete all TODOs and then remove the these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program3.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+
+# check the code for various characteristics
+- src/program1.py:
+    - description: src/program4.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program4.py -> Complete all TODOs and then remove the these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program4.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+
+# check the code for various characteristics
+- src/program1.py:
+    - description: src/program5.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program5.py -> Complete all TODOs and then remove the these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program5.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# check the code for various characteristics
+- src/program1.py:
+    - description: src/program6.py -> Ensure that file exists.
+      check: ConfirmFileExists
+    - description: src/program6.py -> Complete all TODOs and then remove the these tags.
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: src/program6.py -> Add your name and then delete the 'Add Your Name Here'
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+
+
+
+
+
+# Check for regular commits (not all at the end)
+- description: At least 5 commits to show iterative work
+  check: CountCommits
+  options:
+    count: 5
+
+
+
+
+# # This checks baseline requirements for the reflection document
+
+# # Check that reflection.md exists and has substantial content
+# - writing/reflection.md:
+#     - description: Ensure reflection.md file exists
+#       check: ConfirmFileExists
+#     - description: Add your name to the reflection document
+#       check: MatchFileFragment
+#       options:
+#         fragment: "Add Your Name Here"
+#         count: 0
+#         exact: false
+#     - description: No TODO markers should remain (all questions answered)
+#       check: MatchFileFragment
+#       options:
+#         fragment: "TODO"
+#         count: 0
+#         exact: false
+#     - description: Minimum word count for comprehensive proposals (at least 600 words). Did you add enough content to explain your ideas?
+#       check: CountFileWords
+#       options:
+#         count: 600
+#         exact: false
+# - src/program1.py:
+#     - description: Ensure program1.py file exists
+#       check: ConfirmFileExists
+#     - description: Add your name to the program1.py file
+#       check: MatchFileFragment
+#       options:
+#         fragment: "Add Your Name Here"
+#         count: 0
+#         exact: false
+#     - description: No TODO markers should remain (all questions answered)
+#       check: MatchFileFragment
+#       options:
+#         fragment: "TODO"
+#         count: 0
+#         exact: false
+
+
+# # Check for regular commits (not all at the end)
+# - description: At least 5 commits to show iterative work
+#   check: CountCommits
+#   options:
+#     count: 5
