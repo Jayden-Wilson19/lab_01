@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 
-Name: Add Your Name Here
+Name: Jayden Wilson
 
 Program 2: String Character Explorer
 This program demonstrates looping through strings character by character.
@@ -24,14 +24,17 @@ def main():
     # Hint: You can loop directly over a string using 'for char in string'
     print(f"\nOriginal message: {message}")
     print("\nEach character on a separate line:")
-    # TODO: Write a for loop to print each character
+    for char in message:
+        print(char)
     
     
     # STEP 2: Count how many vowels are in the message
     # Hint: Check if each character is in the string 'aeiouAEIOU'
     print("\nCounting vowels:")
     vowel_count = 0
-    # TODO: Write a for loop to count vowels
+    for char in message:
+        if char in 'aeiouAEIOU':
+            vowel_count += 1
     
     
     print(f"Number of vowels: {vowel_count}")
@@ -39,14 +42,17 @@ def main():
     # STEP 3: Print each character with its index position
     # Hint: Use enumerate() function to get both index and character
     print("\nCharacters with their positions:")
-    # TODO: Use a for loop with enumerate() to print index and character
+    for index, char in enumerate(message):
+        print(f"Index {index}: {char}")
     
     
     # STEP 4: Create a new string with only the uppercase letters
     # Hint: Use the .isupper() method to check if a character is uppercase
     print("\nExtracting uppercase letters:")
     uppercase_only = ""
-    # TODO: Loop through the string and build a new string with only uppercase letters
+    for char in message:
+        if char.isupper():
+            uppercase_only += char
     
     
     print(f"Uppercase letters only: {uppercase_only}")
