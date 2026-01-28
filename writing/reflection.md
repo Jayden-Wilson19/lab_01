@@ -49,7 +49,7 @@ Program 4 used nested loops to create patterns. Describe what happens when you h
 
 **Your Answer:**
 
-TODO: Write your answer here (4-6 sentences)
+For every iteration, the inner loop wil continue. The inner loop will continue to multiply its variables with the outer loops for each iteration until finished. In program 4, we assigned 5 to rows and 8 to cols. In the nested loop, the outer loop is assigned the rows and the inner is cols. After writing the nested loop it's shown that there is a print statement tells the inner loop to multiply both until the final print which will be the final output.
 
 ---
 
@@ -59,7 +59,7 @@ In Program 3, you used a `break` statement in the password checker. Explain what
 
 **Your Answer:**
 
-TODO: Write your answer here (3-5 sentences)
+A break statement stops the loop it is connected to, skipping to the next statement. Another way break is used is when iterating through thousands of product IDs and finding a specific match. Once it's found, you can use a break to stop the search immediately. Breaks are really good when you want an easy way to stop your loops from not being continuous unless necessary
 
 ---
 
