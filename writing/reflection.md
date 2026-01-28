@@ -1,7 +1,7 @@
 # Lab 01 Reflection
 
-**Student Name:** Add Your Name Here  
-**Date:** TODO: Add the date
+**Student Name:** Jayden Wilson  
+**Date:** 1/28/2026
 
 ---
 
@@ -19,7 +19,7 @@ In your own words, explain the main difference between a `for` loop and a `while
 
 **Your Answer:**
 
-TODO: Write your answer here (3-5 sentences)
+Looking through each program, I can say that for loops are mainly used in connection with range, either with numbers or words. It will ask for an amount of said numbers or chracters in a list or word and later display the selected ones. For while loops, they take into consideration of whats given to them and will expand on it in some way or another. Unlike the for loop, while loops will leave whats given to them alone without asking to take and select certain information from it and instead will take it and make it bigger or smaller.
 
 ---
 
@@ -29,7 +29,7 @@ You used the `range()` function extensively in Program 1. Explain what `range(1,
 
 **Your Answer:**
 
-TODO: Write your answer here (3-5 sentences)
+The ranges being connected with the for loops in program 1 is a function that will allow you to enter numbers in that range for it to output the numbers in that range. For example, in the first program we were told to type range(1, 11), this will confuse many leaving people to believe that this range will display numbers from 1 - 11. Instead it will go form 1 - 10.
 
 ---
 
@@ -39,7 +39,7 @@ In Program 2, you looped through a string character by character. Explain why we
 
 **Your Answer:**
 
-TODO: Write your answer here (2-4 sentences)
+In program 2, in our for loop(s) there was another function connected to it that allowed it to ignore the string and take the words and break it down as much as we wanted, the function being "char". Char is a function that is able to break through a string message allowing anything affiliated with it to also have acess to that string.
 
 ---
 
@@ -99,7 +99,9 @@ Think about real-world problems or situations where loops would be essential. De
 
 **Your Answer:**
 
-TODO: Write your answer here (4-6 sentences)
+Loops are a really important function that larger programming languages and places still use quite a bit. For loops are very useful when needing an easier way to look through a list of information and assign it to its respective position.
+
+
 
 ---
 
@@ -109,7 +111,7 @@ What was the most challenging bug or error you encountered while working on this
 
 **Your Answer:**
 
-TODO: Write your answer here (4-6 sentences)
+For some of the programs, when running my code the output would display nothing as opposed to the information I had written down. Assuming it was due to not popping out in someway I tried looking for ways it could so it can display like the other information indentical to yours.
 
 ---
 
@@ -121,7 +123,7 @@ How would you rate the difficulty of this lab? Were the programs appropriately c
 
 **Your Answer:**
 
-TODO: Write your answer here (3-5 sentences)
+Being introduced to different loops for my first CMPSC course, this lab was fairly simple. In some cases, it was a nice refresher and a nice way for us to become familiar with these functions again.
 
 ---
 
@@ -131,7 +133,7 @@ What suggestions do you have for improving this lab? Was anything unclear in the
 
 **Your Answer:**
 
-TODO: Write your answer here (3-5 sentences)
+Seeing as this lab was i'm assuming a great way to bring back our memories of loops, there isn't really much I would add or change. I think this lab served as a nice refresher for one of the most commonly used function in CMPSC. 
 
 ---
 
@@ -139,11 +141,11 @@ TODO: Write your answer here (3-5 sentences)
 
 Before submitting, make sure you have:
 
-- [ ] Completed all six programs in the `src/` folder
-- [ ] Tested each program and verified it produces the expected output
+- [X] Completed all six programs in the `src/` folder
+- [X] Tested each program and verified it produces the expected output
 - [ ] Answered all 10 conceptual questions above
-- [ ] Answered both feedback questions
-- [ ] Added your name and date at the top of this document
+- [X] Answered both feedback questions
+- [X] Added your name and date at the top of this document
 - [ ] Reviewed your answers for completeness and clarity
 - [ ] Committed and pushed all changes to GitHub
 
