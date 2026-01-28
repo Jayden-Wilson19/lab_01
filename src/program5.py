@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 
-Name: Add Your Name Here
+Name: Jayden Wilson
 
 Program 5: List Processing with Loops
 This program demonstrates looping through lists and using conditionals.
@@ -25,19 +25,24 @@ def main():
     # STEP 1: Print all numbers with their indices
     print("\nList of numbers with indices:")
     print(f"Original list: {numbers}")
-    # TODO: Use enumerate() to print each number with its index
+    for index in range(len(numbers)):
+        print(f"Index {index}: {numbers[index]}")
     # Format: "Index 0: 15"
     
     
     # STEP 2: Find and print all even numbers from the list
     print("\nEven numbers from the list:")
-    # TODO: Loop through numbers and print only even numbers
+    for num in numbers:
+        if num % 2 == 0:
+            print(num)
     # Hint: Use the modulo operator (%) to check if a number is even
     
     
     # STEP 3: Calculate statistics
     print("\nNumber statistics:")
-    # TODO: Calculate and print:
+    total_sum = 0
+    largest = numbers[0]
+    smallest = numbers[0]
     # - The sum of all numbers
     # - The average (mean) of all numbers
     # - The largest number
@@ -47,14 +52,17 @@ def main():
     
     # STEP 4: Filter names by length
     print("\nNames with 5 or more characters:")
-    # TODO: Loop through the names list
+    for name in names:
+        if len(name) >= 5:
+            print(name)
     # Print only names that have 5 or more characters
     # Hint: Use len() function to get the length of each name
     
     
     # STEP 5: Temperature analysis
     print("\nTemperature analysis:")
-    # TODO: Loop through temperatures and count:
+    above_75 = 0
+    below_70 = 0
     # - How many days were above 75 degrees
     # - How many days were below 70 degrees
     # - How many days were comfortable (70-75 inclusive)
@@ -63,7 +71,8 @@ def main():
     # STEP 6: Create a new list with modified values
     print("\nDoubled numbers:")
     doubled = []
-    # TODO: Loop through numbers and create a new list
+    for num in numbers:
+        doubled.append(num * 2)
     # where each number is doubled
     # Hint: Use .append() to add items to the doubled list
     

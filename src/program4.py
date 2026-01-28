@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 
-Name: Add Your Name Here
+Name: Jayden Wilson
 
 Program 4: Nested Loops and Patterns
 This program uses nested loops to create visual patterns.
@@ -22,7 +22,10 @@ def main():
     print("\nPattern 1: Rectangle (5x8)")
     rows = 5
     cols = 8
-    # TODO: Use nested loops to print a rectangle
+    for i in range(rows):
+        for j in range(cols):
+            print("*", end="")
+        print()
     # Outer loop: iterate over rows
     # Inner loop: iterate over columns
     # Hint: Use print("*", end="") to print without newline
@@ -37,7 +40,10 @@ def main():
     # Row 5: *****
     print("\nPattern 2: Right Triangle")
     height = 5
-    # TODO: Use nested loops where inner loop depends on outer loop
+    for row in range(1, height + 1):
+        for star in range(row):
+            print("*", end="")
+        print()
     # Hint: If outer loop is row (1 to 5), inner loop should print 'row' stars
     
     
@@ -50,7 +56,12 @@ def main():
     print()
     print("   " + "-" * 20)
     
-    # TODO: Use nested loops to create multiplication table
+    for i in range(1, 6):
+        print(f"{i}|", end="")
+        for j in range(1, 6):
+            product = i * j
+            print(f"{product:4}", end="")
+        print()
     # Outer loop: rows (1 to 5)
     # Inner loop: columns (1 to 5)
     # Print row number, then calculate and print each product
@@ -64,7 +75,17 @@ def main():
     # Row 4:  1234321
     print("\nPattern 4: Number Pyramid")
     pyramid_height = 4
-    # TODO: Create a number pyramid
+    for row in range(1, pyramid_height + 1):
+        # Print leading spaces
+        for space in range(pyramid_height - row):
+            print(" ", end="")
+        # Print ascending numbers
+        for num in range(1, row + 1):
+            print(num, end="")
+        # Print descending numbers
+        for num in range(row - 1, 0, -1):
+            print(num, end="")
+        print()
     # This is challenging! You'll need:
     # - Outer loop for rows
     # - Loop to print leading spaces
