@@ -10,7 +10,7 @@ The dictionary is provided. Here, we learn how to access and process its data.
 
 def main():
     """
-    Main function to demonstrate dictionary iteration.
+    Main function to demonstrate dictionary exploration using loops.
     """
     
     print("=" * 50)
